@@ -100,3 +100,6 @@ int main(){
   ```
 We decrypted the hash value that we were given and was told that the input is atmost 16 bytes.
 Given hash value is ```6E626264000000000188808065E16CE26FEEEBEC65E16CE2018C898865E16CE20004090800000000018C898865E16CE26E666B6C000000006E62626400000000```.
+As per code, the encryption is taking place in the order theta,pi,chi and for 24 rounds. 
+Some observations are that there are only 128 bits and so there are only 2 non-zero blocks along 3rd dimension and remaining blocks are all 0's, the operations taking place are only along first and second and nothing along third.
+Lets suppose first 64 bits as ```latex m_1```
