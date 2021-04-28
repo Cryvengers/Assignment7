@@ -3,7 +3,8 @@ This is the decryption of toy version of SHA-3 with b=1600 bit state matrix. In 
 ```cpp
 #include <iostream>
 using namespace std
-char str[str_length];
+int main(){
+        char str[str_length];
 	char hexa[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
 	uint64_t b = 1600;
@@ -95,5 +96,6 @@ char str[str_length];
 		if(k == 256)
 			printf("\n\t");
 	}
+}
   ```
   
