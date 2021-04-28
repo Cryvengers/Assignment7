@@ -1,5 +1,5 @@
 # Toy version of SHA-3
-This is the decryption of toy version of SHA-3 with b=1600 bit state matrix. In this there are only three step mappings namely theta, chi, pi and they follow the following algorithm for encrption.
+This is the decryption of toy version of [SHA-3](https://hello.iitk.ac.in/sites/default/files/cs641a2021/resources/NIST.FIPS_.202_0.pdf) with b=1600 bit state matrix. In this there are only three step mappings namely theta, chi, pi and they follow the following algorithm for encrption.
 ```cpp
 #include <iostream>
 using namespace std
@@ -98,4 +98,4 @@ int main(){
 	}
 }
   ```
-  
+
