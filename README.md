@@ -1,6 +1,8 @@
 # Toy version of SHA-3
 This is the decryption of toy version of SHA-3 with b=1600 bit state matrix. In this there are only three step mappings namely theta, chi, pi and they follow the following algorithm for encrption.
 ```cpp
+#include <iostream>
+using namespace std
 char str[str_length];
 	char hexa[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
@@ -31,22 +33,14 @@ char str[str_length];
 			++k;
 		}
 	}
-
-
-
 	while(k < r){
 		message[k] = 0;
 		++k;
 	}
-
-
 	for(k = 0; k < r; ++k)
 		state[k/(64*5)][(k/64) % 5][k%64] = message[k];
-
-
 	uint64_t current_round = 0;
 	uint64_t column_parity[5][64];
-
 	while(current_round < rounds){
 		//theta operation
 		for(i = 0; i < 5; ++i){
@@ -56,8 +50,6 @@ char str[str_length];
 					column_parity[i][k] ^= state[i][j][k];
 			}
 		}
-
-		
 
 		for(i = 0; i < 5; ++i){
 			for(j = 0; j < 5; ++j){
